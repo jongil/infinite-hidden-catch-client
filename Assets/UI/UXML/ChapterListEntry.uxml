@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="ListEntryElement" style="width: 100%; height: 100%;">
+        <ui:VisualElement name="PictureElement" style="width: 100%; height: 100%; background-image: url(&apos;project://database/Assets/Images/27.jpg?fileID=2800000&amp;guid=83764e71f4de8440c9eedb3eb8287477&amp;type=3#27&apos;);" />
+    </ui:VisualElement>
+</ui:UXML>

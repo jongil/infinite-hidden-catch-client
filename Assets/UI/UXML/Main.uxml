@@ -1,0 +1,32 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/USS/Main.uss?fileID=7433441132597879392&amp;guid=a6fcacce9d3724afcb763bbb83ef6c4e&amp;type=3#Main" />
+    <ui:VisualElement name="RootElement" style="width: 100%; height: 100%;">
+        <ui:VisualElement name="HeaderElement" class="header" style="background-color: rgb(246, 247, 249);">
+            <ui:VisualElement name="TopHeaderElement" class="header__top">
+                <ui:VisualElement name="StarCountElement" style="flex-direction: row; width: 55%; justify-content: flex-end; align-items: center;">
+                    <ui:VisualElement name="StarIcon" style="width: 101px; height: 97px; align-items: flex-start; background-image: url(&apos;project://database/Assets/ThirdPartyAssets/Easter_UI/Icons/stars_03.png?fileID=2800000&amp;guid=f7c4bfbd222d1e547a7e6fe4a53fa1ef&amp;type=3#stars_03&apos;);" />
+                    <ui:Label text="15" display-tooltip-when-elided="true" name="StarCountLabel" style="align-items: center; height: 100px; width: 90px; justify-content: space-between; flex-direction: column; color: rgb(0, 0, 0); font-size: 85px; -unity-font-style: bold;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="SettingElement" style="height: auto; width: 45%; align-items: center; justify-content: flex-end; background-color: rgb(246, 247, 249); margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; flex-direction: row;">
+                    <ui:Button display-tooltip-when-elided="true" name="SettingButton" style="background-image: url(&apos;project://database/Assets/ThirdPartyAssets/Easter_UI/Icons/setting.png?fileID=2800000&amp;guid=df5b897bce4709047894f26a4c8a21c3&amp;type=3#setting&apos;); width: 122px; height: 127px; background-color: rgb(73, 202, 246);" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="ChapterHeaderElement" class="header__top" style="align-items: center;">
+                <ui:VisualElement name="FirstContextElement" class="element__d3" style="justify-content: center;">
+                    <ui:Label text="챕터 1" display-tooltip-when-elided="true" name="ChapterInfoLabel" style="height: 100%; font-size: 80px; color: rgb(10, 9, 9); -unity-font-style: bold; justify-content: flex-start;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="MiddleContextElement" class="element__d3" style="flex-direction: row; justify-content: center;">
+                    <ui:Button display-tooltip-when-elided="true" name="BeforeChapterButton" class="rotate180 button__arrow" style="width: 90px;" />
+                    <ui:Button display-tooltip-when-elided="true" name="NextChapterButton" class="button__arrow" style="background-image: url(&apos;project://database/Assets/ThirdPartyAssets/Easter_UI/blue_buttons/icon_arrow.png?fileID=2800000&amp;guid=b3e03cbc0f880db4ebe23ff32879ddf3&amp;type=3#icon_arrow&apos;);" />
+                </ui:VisualElement>
+                <ui:VisualElement name="LastContextElement" class="element__d3" style="flex-direction: row-reverse; align-items: center; justify-content: flex-start; font-size: 30px; -unity-font-style: bold;">
+                    <ui:Label text="1/20" display-tooltip-when-elided="true" name="ClearChapterCountLabel" style="height: 100%; flex-direction: column; align-items: flex-start; font-size: 80px;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="ContentElement" style="width: 100%; height: 70%; background-color: rgb(246, 247, 249);">
+            <ui:ListView focusable="true" name="ChapterListView" style="width: 100%; height: 100%;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="BannerElement" style="width: 100%; height: 15%; background-color: rgb(246, 247, 249);" />
+    </ui:VisualElement>
+</ui:UXML>
